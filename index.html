@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<title>jEqualize Plugin Example</title>
+		<meta charset="UTF-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+		<script src="jequalize.js" type="text/javascript"></script>
+		<style type="text/css" media="screen">
+			* { margin:0; border:0; font-size: 12px; }
+			p { margin:10px 0; }
+			#wrap { width:960px; margin: 0 auto; }
+			#content { display:table; width:600px; float:left; }
+			#content ul li { display:block; float:left; width:240px; margin-right: 10px; border-bottom:1px dashed grey; margin-bottom: 20px; }
+			#sidebar { width:350px; float: right; }
+			#content, #sidebar { border-bottom: 1px dashed green; }
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$("#content ul li").jequalize(2);
+				$("#content, #sidebar").jequalize();
+			});
+		</script>
+		
+    </head>
+    <body>
+		<div id="wrap">
+			<div id="content">
+				<ul>
+					<li>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque metus felis, fringilla sed iaculis non, mattis eu purus. Proin quis nisi turpis, non interdum libero. Vestibulum vitae velit a nunc posuere iaculis sit amet in diam.</p>
+					</li>
+					<li>
+						<p>Vestibulum neque quam, porta in suscipit a, feugiat quis leo. Praesent in congue libero. Integer a pulvinar mauris. Proin justo nisi, placerat in suscipit eu, tristique vel leo. Donec accumsan dictum enim, vitae congue nibh ornare porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi mollis vehicula ipsum eu tincidunt.</p>
+					</li>
+					<li>
+						<p>Nunc dapibus tempus iaculis. Nulla a nibh tortor. Nam nisi justo, tincidunt eget porta in, congue at dolor. Aliquam at blandit libero. Cras blandit blandit tellus, nec ullamcorper est scelerisque nec. Nunc ac augue sit amet enim aliquam iaculis vitae vitae lorem. Fusce sed massa enim. Integer elementum, nisl sit amet venenatis tempor, odio nulla placerat nibh, sed consectetur erat nibh quis orci. </p>
+					</li>
+					<li>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices cursus tortor sed rutrum. Sed non porttitor nisi. </p>
+					</li>
+				</ul>
+			</div>
+			<div id="sidebar">
+				<p>Suspendisse eget eros id mi pulvinar convallis condimentum nec velit. Aliquam congue, quam eget adipiscing rhoncus, dolor leo auctor lorem, nec commodo nibh augue at enim. Integer a odio ante. Nulla tempus, odio eget porta feugiat, est tortor pretium quam, quis ultrices felis elit nec justo. Proin porttitor tempor dui, at laoreet libero condimentum vel. Praesent nec leo eros. Duis sed lacus ut ipsum lobortis pharetra sed vitae elit. Integer tincidunt feugiat ante vitae aliquet. Maecenas imperdiet nulla non felis varius eget ornare mauris tincidunt. Morbi lacinia sem eu nisl ornare bibendum. Sed vehicula sodales blandit. </p>
+			</div>
+		</div>
+    </body>
+</html>
